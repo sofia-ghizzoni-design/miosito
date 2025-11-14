@@ -423,26 +423,23 @@ a.nav-link{
         margin: 0 0 12px 0; /* reset margini verticali */
         text-align: left;
     }
-
-    /* testo descrizione mantiene padding coerente */
     .testo-descrizione {
         padding-left: 15px;
         padding-right: 15px;
         text-align: left;
     }
-}
-
-/* assicura il medesimo comportamento anche per schermi molto piccoli */
-@media (max-width:375px) {
-    .titolo-grande,
-    .titoletto,
-    .prima-row .titolo {
+    .container-fluid-4 .titoletto,
+    .container-fluid-4 .testo-descrizione {
         padding-left: 15px !important;
         padding-right: 15px !important;
         box-sizing: border-box;
+        margin: 0 0 12px 0;
         width: 100%;
-        display: block;
         text-align: left;
+    }
+    .container-fluid-4 .testo-descrizione {
+        text-align: left;
+        line-height: 1.6;
     }
 }
 
@@ -501,6 +498,15 @@ a.nav-link{
         font-size: 12px;
         line-height: 1.4;
         padding: 15px;
+        text-align: left;
+    }
+    .container-fluid-4 .titoletto,
+    .container-fluid-4 .testo-descrizione {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box;
+        margin: 0 0 10px 0;
+        width: 100%;
         text-align: left;
     }
 }
