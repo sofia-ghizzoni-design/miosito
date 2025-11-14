@@ -1,0 +1,427 @@
+/* PRIMA FASCIA */
+
+.container-fluid{
+    background-color: #D8CEFE;
+     height: 10vh; /*10% dell'altezza dello schermo */
+}
+
+.container-fluid .row{
+    height: 100%;
+    align-items: center;
+}
+
+.no-padding-left{
+    padding-left: 0 !important;
+}
+
+h3{
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7200FF;
+    margin-left: 40px;
+}
+
+.logo {
+    background: transparent no-repeat url(../img/menu.svg);
+    margin-right: 40px;
+    border: none;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* navigazione mobile */
+.mobile-nav-wrapper{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D8CEFE;
+    z-index: 1000;
+    display: none;
+    padding-top: 33%;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+}
+
+.mobile-nav-wrapper.show{
+    display: flex;
+}
+
+.mobile-nav-wrapper.animate{
+    transform: translateX(0);
+}
+
+.mobile-nav-wrapper .nav-list{
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.mobile-nav-wrapper.animate .nav-list{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.mobile-nav-wrapper .nav-link:hover{
+    color: #501E8E;
+    border-bottom: #501E8E solid 3px;
+}
+
+.mobile-nav-wrapper .nav-item{
+    margin: 15px 0;
+    width: 100%;
+}
+
+.mobile-nav-wrapper .nav-link{
+    font-size: 24px;
+    padding: 8px 0;
+}
+
+.mobile-nav-wrapper .nav-link:hover{
+    color: #501E8E;
+    border-bottom: #501E8E solid 3px;
+}
+
+/* Bottone menu */
+.btn-menu{
+    background: transparent url('../img/menu.svg') no-repeat center center;
+    border: none;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 0; /* Nasconde il testo del bottone */
+    margin: 0 10px !important;
+}
+
+/* Bottone close menu */
+.btn-close{
+    background: transparent url('../img/close.svg') no-repeat center center;
+    background-size: cover;
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 0; /* Nasconde il testo del bottone */
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+
+/* testo in colonne */
+.testo-colonne {
+    column-count: 3;
+    column-gap: 40px;
+    /* column-rule: solid 1px #ccc; */
+}
+.testo-2colonne {
+    column-count: 2;
+    column-gap: 40px;
+    /* column-rule: solid 1px #ccc; */
+}
+
+
+/* stile di navigazione generale*/
+ul.nav-list{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+li.nav-item{
+    margin: 0;
+    padding: 0;
+}
+
+/* stile di navigazione dei singoli elementi puntati (elelemnti "a")*/
+a.nav-link{
+    color: #7200FF;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Inter, Helvetica, sans-serif;
+    margin: 8px;
+    padding: 8px;
+}
+
+/* cosa succede quando clicco sui link*/
+.nav-link:hover{
+    color: #501E8E;
+    border-bottom: #501E8E solid 4px;
+}
+
+/* SECONDA FASCIA */
+
+.titolo-grande-1{
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 65px;
+    color: #501E8E;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.sottotitolo{
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #501E8E;
+    font-weight: small;
+    text-align: left;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.titolo{
+    position: absolute;
+    top: 50%;
+    left: 8.33%; /* inizio della seconda colonna */
+    transform: translateY(-50%);
+}
+
+/* TERZA E QUARTA FASCIA */
+
+.titolo-grande-2{
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 65px;
+    color: #D8CEFE;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.testi-bianchi{
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #D8CEFE;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.position-relative-2{
+    position: relative;
+}
+
+.position-relative-2 img{
+    margin-top: 50px; 
+}
+
+.position-relative-3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.position-relative-3 img{
+    margin-top: 50px;
+    width: calc(100% - 100px);
+    height: auto;
+}
+
+.titolo-centrato{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* testo sopra all'immagine */
+    width: 50%; /* 6 colonne su 12 = 50% */
+    max-width: 100%;
+}
+
+.position-relative-3 .titolo-centrato{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 50%;
+}
+
+.container-fluid-2{
+    background-color: #501E8E;
+}
+
+/* QUINTA FASCIA */
+
+.container-fluid-3{
+    background-color: #D8CEFE;
+    position: relative;
+    padding: 150px 0;
+}
+
+.titolo-centrato-progetti{
+    text-align: center;
+}
+
+.titolo-grande-progetti{
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 65px;
+    color: #501E8E;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0;
+}
+
+/* SESTA FASCIA */
+
+.titolo-grande{
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 65px;
+    color: #000000;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.titoletto{
+    font-family: Inter, Outfit, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #501E8E;
+    font-weight: normal;
+    text-align: left;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.container-fluid-3{
+    background-color: #D8CEFE;
+    position: relative;
+    padding: 150px 0;
+}
+
+.titolo{
+    position: absolute;
+    top: 50%;
+    left: 8.33%; /* inizio della seconda colonna */
+    transform: translateY(-50%);
+}
+
+.prima-row{
+    align-items: center;
+}
+
+.prima-row .titolo{
+    position: static;
+    transform: none;
+}
+
+
+
+
+/* media queries > come se facessi una nuova pagina css > in questo caso scriviamo queste regole per il formato tablet*/
+@media (max-width:768px) {
+
+    .titolo-grande-1{
+        font-size: 35px;
+        line-height: 36px;
+    }
+    .sottotitolo{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .titolo-grande-2{
+        font-size: 35px;
+        line-height: 36px;
+    }
+    .testi-bianchi{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .titolo-grande{
+        font-size: 35px;
+        line-height: 36px;
+    }
+    .position-relative-2 img {
+        display: none;
+    }
+    .position-relative-2 .titolo-centrato {
+        position: static; /* Rimuove il posizionamento assoluto */
+        transform: none;
+        width: 100%;
+        padding: 30px 20px;
+        margin-bottom: 60px;
+    }
+    .position-relative-3 img {
+        display: none;
+    }
+    .position-relative-3 .titolo-centrato {
+        position: static; /* Rimuove il posizionamento assoluto */
+        transform: none;
+        width: 100%;
+        padding: 30px 20px;
+        margin-top: 60px;
+    }
+    .titoletto{
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .titolo-grande-progetti{
+        font-size: 35px;
+        line-height: 36px;
+    }
+    
+}
+
+/* media queries > come se facessi una nuova pagina css > in questo caso scriviamo queste regole per il formato mobile*/
+@media (max-width:375px) {
+
+    .titolo-grande-1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .sottotitolo{
+        font-size: 7px;
+        line-height: 23px;
+    }
+    .titolo-grande-2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .testi-bianchi{
+        font-size: 5px;
+        line-height: 7px;
+    }
+    .titolo-grande{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .position-relative-2 img {
+        display: none;
+    }
+    .position-relative-2 .titolo-centrato {
+        position: static; /* Rimuove il posizionamento assoluto */
+        transform: none;
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .position-relative-3 img {
+        display: none;
+    }
+    .position-relative-3 .titolo-centrato {
+        position: static; /* Rimuove il posizionamento assoluto */
+        transform: none;
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .titoletto{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .titolo-grande-progetti{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

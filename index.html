@@ -1,11 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <title>Hello World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghizzoni Sofia | Portfolio Personale</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1 id="greeting">Hello World!</h1>
-  <p>Benvenuto su questa semplice pagina di esempio.</p>
-  <h1>CIAOOOOOOOOOOOO!!!!!!!!!</h1>
+
+  <!-- prima fascia -->
+  <div class="container-fluid">
+      
+      <div class="row">
+            <div class="col-6 col-lg-2">
+              <h3>SG</h3>
+            </div>
+            <div class="d-none d-lg-flex col-lg-9">
+                <ul class="nav-list">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link selected">About me</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Percorso</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Progetti</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Contatti</a>
+                      </li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-1 d-flex d-lg-none justify-content-end align-items-center">
+              <button class="logo btn btn-menu d-block d-lg-none">Menù</button>
+            </div>
+        </div>
+
+        <div class="mobile-nav-wrapper d-lg-none">
+                <button class="btn btn-close mb-3">Close</button>
+                <ul class="nav-list">
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">About me</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Percorso</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Progetti</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#" class="nav-link">Contatti</a>
+                      </li>
+                </ul>
+        </div>
+  </div>
+
+  <!-- seconda fascia -->
+   <div class="row">
+    <div class="col-12 position-relative">
+      <img src="img/foto per portfolio viraggio colore orizzontale_NUOVA.jpg" class="img-fluid" alt="foto di Ghizzoni Sofia">
+      <div class="titolo">
+        <p class="titolo-grande-1">Ghizzoni<br>Sofia</p>
+        <p class="sottotitolo">PORTFOLIO PERSONALE</p>
+      </div>
+    </div>
+   </div>
+
+  <!-- terza fascia -->
+  <div class="container-fluid-2">
+   <div class="row">
+    <div class="col-12 position-relative-2">
+      <img src="img/sfondo about me e percorso_v1 - Copia.png" class="img-fluid" alt="illustrazione delle tre torri di san marino e della cartina della città di reggio emilia">
+      <div class="col-md-6">
+        <div class="titolo-centrato">
+        <p class="titolo-grande-2">About me</p>
+        <p class="testi-bianchi">Mi chiamo Sofia, vengo da Reggio Emilia e sono una studentessa del secondo anno all’Università degli studi di design di San Marino.
+        L’arte in tutte le sue forme mi ha sempre affascinata moltissimo. 
+        Amo girare per le città, visitare mostre e mangiare buon cibo.</p>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+
+  <!-- quarta fascia -->
+  <div class="container-fluid-2">
+   <div class="row">
+    <div class="col-12 position-relative-3">
+      <img src="img/sfondo about me e percorso_v1.png" class="img-fluid" alt="illustrazione delle tre torri di san marino e della cartina della città di reggio emilia">
+      <div class="titolo-centrato">
+        <p class="titolo-grande-2">Percorso</p>
+        <p class="testi-bianchi">Ho scelto questo percorso di studi fin dalle superiori frequentando un liceo grafico.
+        Ho poi deciso di seguire la strada del design perché ho capito di preferire principalmente la comunicazione; riesce a farmi esprimere la creatività e la voglia di sperimentare in un mondo sempre in evoluzione. 
+        Nei progetti prediligo l’aspetto estetico e la funzionalità.</p>
+      </div>
+    </div>
+   </div>
+  </div>
+
+<!-- quinta fascia -->
+<div class="container-fluid-3">
+   <div class="row">
+    <div class="col-12">
+      <div class="titolo-centrato-progetti">
+        <p class="titolo-grande-progetti">Progetti</p>
+      </div>
+    </div>
+   </div>
+</div>
+
+<!-- sesta fascia -->
+<div class="container-fluid-3 content-wrapper">
+      
+      <div class="row prima-row mb-4">
+           <div class="col-1"></div> 
+           <div class="col-12 col-sm-4 mb-3 mb-md-0 titolo">
+                <p class="titoletto">2023</p>
+                <p class="titolo-grande">"Ad ognuno le<br> sue origini"</p>
+            </div>
+            <div class="col-12 col-sm-6">
+                <img src="img/fotografia europea.jpg" class="img-fluid" alt="foto di una sedia arrugginita posta di spalle all'osservatore, che guarda le colline e le fabbriche circostatnti">
+            </div>
+            <div class="col-1"></div>
+      </div>
+</div>
+
+<script>
+// Seleziona gli elementi
+const btnMenu = document.querySelector('.btn-menu');
+const btnClose = document.querySelector('.btn-close');
+const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+const navLinks = document.querySelectorAll('.mobile-nav-wrapper .nav-link');
+
+// Funzione per aprire il menu
+function openMenu() {
+    mobileNavWrapper.classList.add('show');
+    // Forza un reflow per far partire l'animazione
+    mobileNavWrapper.offsetHeight;
+    // Attiva l'animazione
+    mobileNavWrapper.classList.add('animate');
+}
+
+// Funzione per chiudere il menu
+function closeMenu() {
+    mobileNavWrapper.classList.remove('animate');
+    // Aspetta che l'animazione finisca prima di nascondere completamente
+    setTimeout(function() {
+        mobileNavWrapper.classList.remove('show');
+    }, 400);
+}
+
+// Apre il menu quando si clicca sul bottone menu
+btnMenu.addEventListener('click', openMenu);
+
+// Chiude il menu quando si clicca sul bottone close
+btnClose.addEventListener('click', closeMenu);
+
+// Chiude il menu quando si clicca sull'area del mobile-nav-wrapper
+mobileNavWrapper.addEventListener('click', function(e) {
+    if (e.target === mobileNavWrapper) {
+        closeMenu();
+    }
+});
+
+// Chiude il menu quando si clicca su un link
+navLinks.forEach(function(link) {
+    link.addEventListener('click', closeMenu);
+});
+</script>
+
 </body>
 </html>
