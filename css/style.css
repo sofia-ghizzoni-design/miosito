@@ -409,6 +409,43 @@ a.nav-link{
     
 }
 
+/* mobile: copre anche dispositivi leggermente più larghi di 375px */
+@media (max-width:425px) {
+    /* usa lo stesso gutter del testo descrizione */
+    .titolo-grande,
+    .titoletto,
+    .prima-row .titolo {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        margin: 0 0 12px 0; /* reset margini verticali */
+        text-align: left;
+    }
+
+    /* testo descrizione mantiene padding coerente */
+    .testo-descrizione {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: left;
+    }
+}
+
+/* assicura il medesimo comportamento anche per schermi molto piccoli */
+@media (max-width:375px) {
+    .titolo-grande,
+    .titoletto,
+    .prima-row .titolo {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
+        text-align: left;
+    }
+}
+
 /* media queries > come se facessi una nuova pagina css > in questo caso scriviamo queste regole per il formato mobile*/
 @media (max-width:375px) {
 
