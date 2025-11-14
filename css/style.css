@@ -331,7 +331,23 @@ a.nav-link{
     transform: none;
 }
 
+/* SETTIMA FASCIA */
 
+.container-fluid-4 {
+    background-color: #D8CEFE;
+    padding: 60px 0;
+}
+
+.testo-descrizione {
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #000000;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 30px;
+}
 
 
 /* media queries > come se facessi una nuova pagina css > in questo caso scriviamo queste regole per il formato tablet*/
@@ -385,6 +401,11 @@ a.nav-link{
         font-size: 35px;
         line-height: 36px;
     }
+    .testo-descrizione {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 20px;
+    }
     
 }
 
@@ -410,12 +431,13 @@ a.nav-link{
     .titolo-grande{
         font-size: 25px;
         line-height: 30px;
+        padding-left: 15px;
     }
     .position-relative-2 img {
         display: none;
     }
     .position-relative-2 .titolo-centrato {
-        position: static; /* Rimuove il posizionamento assoluto */
+        position: static;
         transform: none;
         width: 100%;
         padding: 30px 20px;
@@ -424,7 +446,7 @@ a.nav-link{
         display: none;
     }
     .position-relative-3 .titolo-centrato {
-        position: static; /* Rimuove il posizionamento assoluto */
+        position: static;
         transform: none;
         width: 100%;
         padding: 30px 20px;
@@ -432,9 +454,16 @@ a.nav-link{
     .titoletto{
         font-size: 14px;
         line-height: 23px;
+        padding-left: 15px;
     }
     .titolo-grande-progetti{
         font-size: 25px;
         line-height: 30px;
+    }
+    .testo-descrizione {
+        font-size: 12px;
+        line-height: 1.4;
+        padding: 15px;
+        text-align: left;
     }
 }
