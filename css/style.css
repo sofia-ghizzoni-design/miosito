@@ -1,23 +1,19 @@
 /* PRIMA FASCIA */
 
-.container-fluid{
-    background-color: #D8CEFE;
-     height: 10vh; /*10% dell'altezza dello schermo */
+body html{
+padding: 0;
+margin: 0;
 }
 
 .header-fixed{
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     z-index: 100000;
-}
-
-.container-fluid .row{
-    height: 100%;
-    align-items: center;
-}
-
-.no-padding-left{
-    padding-left: 0 !important;
+    background-color: #D8CEFE;
+    height: 10vh;
 }
 
 h3{
@@ -26,6 +22,7 @@ h3{
     font-weight: bold;
     color: #7200FF;
     margin-left: 40px;
+    margin: 0;
 }
 
 .logo {
@@ -175,6 +172,7 @@ a.nav-link{
     color: #501E8E;
     font-weight: bolder;
     text-align: left;
+    margin: 0;
 }
 
 .sottotitolo{
@@ -183,6 +181,7 @@ a.nav-link{
     color: #501E8E;
     font-weight: small;
     text-align: left;
+    margin: 0;
 }
 
 .position-relative{
@@ -194,6 +193,7 @@ a.nav-link{
     top: 50%;
     left: 8.33%; /* inizio della seconda colonna */
     transform: translateY(-50%);
+    margin: 0;
 }
 
 /* TERZA E QUARTA FASCIA */
@@ -204,6 +204,7 @@ a.nav-link{
     color: #D8CEFE;
     font-weight: bolder;
     text-align: center;
+    margin: 0;
 }
 
 .testi-bianchi{
@@ -213,6 +214,7 @@ a.nav-link{
     font-weight: normal;
     text-align: center;
     padding-top: 30px;
+    margin: 0;
 }
 
 .position-relative-2{
@@ -288,6 +290,7 @@ a.nav-link{
     font-weight: bolder;
     text-align: left;
     margin-top: 10px;
+    margin: 0;
 }
 
 .titoletto{
@@ -296,6 +299,7 @@ a.nav-link{
     color: #501E8E;
     font-weight: normal;
     text-align: left;
+    margin: 0;
 }
 
 .position-relative{
@@ -313,6 +317,7 @@ a.nav-link{
     top: 50%;
     left: 8.33%; /* inizio della seconda colonna */
     transform: translateY(-50%);
+    margin: 0;
 }
 
 .prima-row{
