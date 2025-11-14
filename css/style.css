@@ -1,5 +1,18 @@
 /* PRIMA FASCIA */
 
+.header-sticky {
+    background-color: #D8CEFE;
+    position: sticky;
+    top: 0;
+    z-index: 999; /* Assicurati che sia sopra gli altri elementi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opzionale: aggiunge un'ombra */
+}
+
+.header-sticky .row {
+    height: 100%;
+    align-items: center;
+}
+
 .container-fluid{
     background-color: #D8CEFE;
      height: 10vh; /*10% dell'altezza dello schermo */
