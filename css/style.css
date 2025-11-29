@@ -333,22 +333,57 @@ a.nav-link{
 
 /* SETTIMA FASCIA */
 
-.container-fluid-4 {
-    background-color: #D8CEFE;
-    padding: 60px 0;
-}
-
-.testo-descrizione {
-    font-family: Inter, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #000000;
+.descrizione {
+    color: #D8CEFE;
+    font-family: Outfit, Helvetica, sans-serif;
+    font-size: 24px;
     font-weight: normal;
-    text-align: justify;
-    line-height: 1.6;
-    margin: 0;
-    padding-top: 30px;
+    text-align: center;
+     max-width: 85%;       
+    margin: 0 auto;      
 }
 
+.container-fluid-5 {
+    background-color: #501E8E;
+    height: 200px;
+}
+*/* Effetto hover sulle immagini */
+.image-hover-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #501E8E; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-hover-container:hover .image-overlay {
+    opacity: 1;
+}
+
+/* OTTAVA FASCIA */
+.image-full-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-full-width img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* mantiene le proporzioni senza distorcere */
+}
 
 /* media queries > come se facessi una nuova pagina css > in questo caso scriviamo queste regole per il formato tablet*/
 @media (max-width:768px) {
